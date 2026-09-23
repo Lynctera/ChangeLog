@@ -27,14 +27,6 @@ A document-classification template built for one client was set as the platform 
 
 A connector that Microsoft had retired sat behind our team's alert channel and began rejecting messages, so operational alerts stopped arriving in that channel while continuing to arrive by email. A second, shorter interruption followed a credential rotation. Both affected internal monitoring only; no customer service, data or commitment was affected. Alert delivery now uses a supported channel with an independent alert on delivery failure, and the notifier refreshes its credentials automatically.
 
-## 2026-06-05 — Administrator account outage
-
-**Severity:** P1 High · **Status:** Resolved
-**Customer impact:** None. The platform, customer sign-in and customer data were unaffected.
-**Duration:** About two hours to restore primary access
-
-During routine clean-up of a retired directory, an operator-assisted tool ran a bulk account deletion against the wrong Microsoft 365 directory, removing our internal staff accounts. Customer-facing services run on separate identities and kept working, and the customer sign-in directory is separate and was not touched. Accounts were recreated and mailboxes restored within about two hours with Microsoft support; some internal chat history was lost. We now require explicit confirmation of the target directory before any destructive identity operation, handle identity changes read-only first and one account at a time, and are adding audit-log export and alerting for bulk account deletions.
-
 ---
 
-_Generated from the incident register. Last updated 2026-09-22._
+_Generated from the incident register. Last updated 2026-09-23._
