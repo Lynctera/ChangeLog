@@ -19,14 +19,6 @@ See also the [changelog](./) for what has shipped.
 
 A document-classification template built for one client was set as the platform default, so documents in four other libraries were categorised and labelled with that client's categories. Each customer's documents stayed in that customer's own isolated database throughout; the effect was incorrect labels and the exposure of one client's category names to other users. The default was replaced with a neutral template, the affected libraries were reset and re-classified, and a build-time check now prevents any client-specific template from becoming the default.
 
-## 2026-06-23 — Internal alert delivery interruption
-
-**Severity:** P2 Medium · **Status:** Resolved
-**Customer impact:** None. Customer-facing services were unaffected; internal alert notifications to one team channel were delayed.
-**Duration:** 23 June to 14 July 2026, and 21 July to 11 August 2026
-
-A connector that Microsoft had retired sat behind our team's alert channel and began rejecting messages, so operational alerts stopped arriving in that channel while continuing to arrive by email. A second, shorter interruption followed a credential rotation. Both affected internal monitoring only; no customer service, data or commitment was affected. Alert delivery now uses a supported channel with an independent alert on delivery failure, and the notifier refreshes its credentials automatically.
-
 ---
 
-_Generated from the incident register. Last updated 2026-09-23._
+_Generated from the incident register. Last updated 2026-09-30._
