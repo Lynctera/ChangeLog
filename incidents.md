@@ -5,7 +5,7 @@ permalink: /incidents/
 
 # Incidents
 
-Security, privacy and availability incidents on the Lynctera platform, and what we did about them. An entry appears here once the incident is resolved and its internal review is complete; the internal record holds the full timeline, root cause and telemetry.
+Security, privacy and availability incidents on the Lynctera platform that impact clients, and what we did about them. An entry appears here once the incident is resolved and its internal review is complete; the internal record holds the full timeline, root cause and telemetry.
 
 Severity follows our incident response plan: **P0** active exploitation, **P1** high risk without proven exploitation, **P2** outages and degraded controls, **P3** low-risk events. To report a security concern, email help@yellowbe.io.
 
